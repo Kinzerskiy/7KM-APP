@@ -7,23 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CE1778F2978CD2F001D4143 /* ClientOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1778E2978CD2F001D4143 /* ClientOrderViewController.swift */; };
+		0CE177942978CE5D001D4143 /* OrdersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE177922978CE5D001D4143 /* OrdersTableViewCell.swift */; };
+		0CE177952978CE5D001D4143 /* OrdersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CE177932978CE5D001D4143 /* OrdersTableViewCell.xib */; };
+		0CE177992978D0AF001D4143 /* ClientOrderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE177982978D0AF001D4143 /* ClientOrderInfo.swift */; };
+		0CE1779B2978D29F001D4143 /* OrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1779A2978D29F001D4143 /* OrderManager.swift */; };
 		0CE9A6AF297304A2000B4FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE9A6AE297304A2000B4FF0 /* AppDelegate.swift */; };
 		0CE9A6B1297304A2000B4FF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE9A6B0297304A2000B4FF0 /* SceneDelegate.swift */; };
-		0CE9A6B3297304A2000B4FF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE9A6B2297304A2000B4FF0 /* ViewController.swift */; };
+		0CE9A6B3297304A2000B4FF0 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE9A6B2297304A2000B4FF0 /* OrdersViewController.swift */; };
 		0CE9A6B6297304A2000B4FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CE9A6B4297304A2000B4FF0 /* Main.storyboard */; };
 		0CE9A6B8297304A5000B4FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CE9A6B7297304A5000B4FF0 /* Assets.xcassets */; };
 		0CE9A6BB297304A5000B4FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CE9A6B9297304A5000B4FF0 /* LaunchScreen.storyboard */; };
+		0CE9A6C3297306DD000B4FF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CE9A6C2297306DD000B4FF0 /* GoogleService-Info.plist */; };
+		47A1BC4731AC20DCB3E14D0B /* Pods_RusikApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49491A50B2465AB17BBD1B83 /* Pods_RusikApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CE1778E2978CD2F001D4143 /* ClientOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientOrderViewController.swift; sourceTree = "<group>"; };
+		0CE177922978CE5D001D4143 /* OrdersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewCell.swift; sourceTree = "<group>"; };
+		0CE177932978CE5D001D4143 /* OrdersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrdersTableViewCell.xib; sourceTree = "<group>"; };
+		0CE177982978D0AF001D4143 /* ClientOrderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientOrderInfo.swift; sourceTree = "<group>"; };
+		0CE1779A2978D29F001D4143 /* OrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderManager.swift; sourceTree = "<group>"; };
 		0CE9A6AB297304A2000B4FF0 /* RusikApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RusikApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE9A6AE297304A2000B4FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CE9A6B0297304A2000B4FF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0CE9A6B2297304A2000B4FF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0CE9A6B2297304A2000B4FF0 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		0CE9A6B5297304A2000B4FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CE9A6B7297304A5000B4FF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CE9A6BA297304A5000B4FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CE9A6BC297304A5000B4FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CE9A6C2297306DD000B4FF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		49491A50B2465AB17BBD1B83 /* Pods_RusikApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RusikApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D1077B209CA325409F92468 /* Pods-RusikApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RusikApp.debug.xcconfig"; path = "Target Support Files/Pods-RusikApp/Pods-RusikApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D269FD2C6CE94C2C3FC97F78 /* Pods-RusikApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RusikApp.release.xcconfig"; path = "Target Support Files/Pods-RusikApp/Pods-RusikApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47A1BC4731AC20DCB3E14D0B /* Pods_RusikApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CE177902978CD5B001D4143 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0CE9A6B2297304A2000B4FF0 /* OrdersViewController.swift */,
+				0CE1778E2978CD2F001D4143 /* ClientOrderViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0CE177912978CE1F001D4143 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0CE177922978CE5D001D4143 /* OrdersTableViewCell.swift */,
+				0CE177932978CE5D001D4143 /* OrdersTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0CE177962978D080001D4143 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0CE1779A2978D29F001D4143 /* OrderManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		0CE177972978D090001D4143 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0CE177982978D0AF001D4143 /* ClientOrderInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0CE9A6A2297304A2000B4FF0 = {
 			isa = PBXGroup;
 			children = (
 				0CE9A6AD297304A2000B4FF0 /* RusikApp */,
 				0CE9A6AC297304A2000B4FF0 /* Products */,
+				3F70D969268B8A6339D1359E /* Pods */,
+				2285D782EDF0507D59866044 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +109,36 @@
 		0CE9A6AD297304A2000B4FF0 /* RusikApp */ = {
 			isa = PBXGroup;
 			children = (
+				0CE177972978D090001D4143 /* Models */,
+				0CE177962978D080001D4143 /* Managers */,
+				0CE177912978CE1F001D4143 /* Cells */,
+				0CE177902978CD5B001D4143 /* ViewControllers */,
 				0CE9A6AE297304A2000B4FF0 /* AppDelegate.swift */,
 				0CE9A6B0297304A2000B4FF0 /* SceneDelegate.swift */,
-				0CE9A6B2297304A2000B4FF0 /* ViewController.swift */,
 				0CE9A6B4297304A2000B4FF0 /* Main.storyboard */,
 				0CE9A6B7297304A5000B4FF0 /* Assets.xcassets */,
 				0CE9A6B9297304A5000B4FF0 /* LaunchScreen.storyboard */,
 				0CE9A6BC297304A5000B4FF0 /* Info.plist */,
+				0CE9A6C2297306DD000B4FF0 /* GoogleService-Info.plist */,
 			);
 			path = RusikApp;
+			sourceTree = "<group>";
+		};
+		2285D782EDF0507D59866044 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49491A50B2465AB17BBD1B83 /* Pods_RusikApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F70D969268B8A6339D1359E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D1077B209CA325409F92468 /* Pods-RusikApp.debug.xcconfig */,
+				D269FD2C6CE94C2C3FC97F78 /* Pods-RusikApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CE9A6BF297304A5000B4FF0 /* Build configuration list for PBXNativeTarget "RusikApp" */;
 			buildPhases = (
+				24EDCD3B1058ECE6587E895A /* [CP] Check Pods Manifest.lock */,
 				0CE9A6A7297304A2000B4FF0 /* Sources */,
 				0CE9A6A8297304A2000B4FF0 /* Frameworks */,
 				0CE9A6A9297304A2000B4FF0 /* Resources */,
+				181C525CC2693F45E2BED5C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,7 +201,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CE177952978CE5D001D4143 /* OrdersTableViewCell.xib in Resources */,
 				0CE9A6BB297304A5000B4FF0 /* LaunchScreen.storyboard in Resources */,
+				0CE9A6C3297306DD000B4FF0 /* GoogleService-Info.plist in Resources */,
 				0CE9A6B8297304A5000B4FF0 /* Assets.xcassets in Resources */,
 				0CE9A6B6297304A2000B4FF0 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +211,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		181C525CC2693F45E2BED5C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RusikApp/Pods-RusikApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RusikApp/Pods-RusikApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RusikApp/Pods-RusikApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24EDCD3B1058ECE6587E895A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RusikApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0CE9A6A7297304A2000B4FF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CE9A6B3297304A2000B4FF0 /* ViewController.swift in Sources */,
+				0CE1778F2978CD2F001D4143 /* ClientOrderViewController.swift in Sources */,
+				0CE9A6B3297304A2000B4FF0 /* OrdersViewController.swift in Sources */,
 				0CE9A6AF297304A2000B4FF0 /* AppDelegate.swift in Sources */,
+				0CE177942978CE5D001D4143 /* OrdersTableViewCell.swift in Sources */,
+				0CE1779B2978D29F001D4143 /* OrderManager.swift in Sources */,
 				0CE9A6B1297304A2000B4FF0 /* SceneDelegate.swift in Sources */,
+				0CE177992978D0AF001D4143 /* ClientOrderInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +406,7 @@
 		};
 		0CE9A6C0297304A5000B4FF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D1077B209CA325409F92468 /* Pods-RusikApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +435,7 @@
 		};
 		0CE9A6C1297304A5000B4FF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D269FD2C6CE94C2C3FC97F78 /* Pods-RusikApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
