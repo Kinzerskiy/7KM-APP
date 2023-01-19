@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OrdersTableViewCell: UITableViewCell {
+class ClientsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var orderNumberLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
@@ -15,11 +15,14 @@ class OrdersTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
     }
+    
+    func fill(with model: Client)  {
+        orderNumberLabel.text = model.orderNumber
+        nameLabel.text = model.name
+        phoneLabel.text = model.phoneNumber
+    }
+    
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
     
 }

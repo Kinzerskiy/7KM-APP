@@ -10,9 +10,21 @@ import FirebaseFirestore
 
 class OrderManager {
     
-    var models: [ClientOrderInfo] = []
+    let db = Firestore.firestore()
+    
+    static let shared = OrderManager()
+    var articles: [Order] = []
+    
+    func getNumberOfArticles() -> Int {
+        return articles.count
+    }
+    
+    func getArticle(by index: Int) -> Order {
+        articles[index]
+    }
     
     func getOrders(completion: @escaping () -> Void) {
+        
         let db = Firestore.firestore()
         let docRef = db.collection("Orders")
         
@@ -21,20 +33,14 @@ class OrderManager {
                 print(error)
             }
             guard let data = data else { return }
-            self?.models.removeAll()
+            self?.articles.removeAll()
             
             for document in data.documents {
                 let orderData = document.data()
                 
-                if let phoneNumber = phoneNumberData["price"] as? String,
-                   let articleModel = articleModelData["articleModel"] as? String,
-                   let city = cityData["city"] as? String,
-                let postNumber = postNumberData["post"] as? String,
-                   let paymentDate = paymentDateData["date"] as? String, {
-                    let uuid = document.documentID
-                    
-                let order = ClientOrderInfo(uuid: uuid, name: name, phoneNumber: phoneNumber, articleModel: articleModel, city: city, postNumber: postNumber, paymentDate: paymentDate)
-                    self?.models.append(order)
+                if let articleModel = orderData["articleModel"] as? String {
+                    let article = Order(articleModel: articleModel)
+                    self?.articles.append(article)
                 }
             }
             completion()
