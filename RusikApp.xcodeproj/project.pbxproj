@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C0CB91A297F2E6A00DC0CDC /* ArticleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CB919297F2E6A00DC0CDC /* ArticleManager.swift */; };
+		0C3AB6CF297C13730045A752 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3AB6CE297C13730045A752 /* Article.swift */; };
 		0CE1778F2978CD2F001D4143 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1778E2978CD2F001D4143 /* OrderViewController.swift */; };
 		0CE177942978CE5D001D4143 /* ClientsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE177922978CE5D001D4143 /* ClientsTableViewCell.swift */; };
 		0CE177952978CE5D001D4143 /* ClientsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CE177932978CE5D001D4143 /* ClientsTableViewCell.xib */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C0CB919297F2E6A00DC0CDC /* ArticleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleManager.swift; sourceTree = "<group>"; };
+		0C3AB6CE297C13730045A752 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		0CE1778E2978CD2F001D4143 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		0CE177922978CE5D001D4143 /* ClientsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsTableViewCell.swift; sourceTree = "<group>"; };
 		0CE177932978CE5D001D4143 /* ClientsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClientsTableViewCell.xib; sourceTree = "<group>"; };
@@ -88,8 +92,9 @@
 		0CE177962978D080001D4143 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				0CE1779E2978DDE7001D4143 /* ClientManager.swift */,
 				0CE1779A2978D29F001D4143 /* OrderManager.swift */,
+				0CE1779E2978DDE7001D4143 /* ClientManager.swift */,
+				0C0CB919297F2E6A00DC0CDC /* ArticleManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 			children = (
 				0CE177982978D0AF001D4143 /* Client.swift */,
 				0CE1779C2978D6CD001D4143 /* Order.swift */,
+				0C3AB6CE297C13730045A752 /* Article.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -278,9 +284,11 @@
 				0CE9A6B3297304A2000B4FF0 /* ClientsViewController.swift in Sources */,
 				0CE1779D2978D6CD001D4143 /* Order.swift in Sources */,
 				0CE9A6AF297304A2000B4FF0 /* AppDelegate.swift in Sources */,
+				0C3AB6CF297C13730045A752 /* Article.swift in Sources */,
 				0CE177A12978E1A9001D4143 /* NewOrderViewController.swift in Sources */,
 				0CE177942978CE5D001D4143 /* ClientsTableViewCell.swift in Sources */,
 				0CE1779B2978D29F001D4143 /* OrderManager.swift in Sources */,
+				0C0CB91A297F2E6A00DC0CDC /* ArticleManager.swift in Sources */,
 				0CE177A42978E254001D4143 /* ArticleTableViewCell.swift in Sources */,
 				0CE9A6B1297304A2000B4FF0 /* SceneDelegate.swift in Sources */,
 				0CE177992978D0AF001D4143 /* Client.swift in Sources */,

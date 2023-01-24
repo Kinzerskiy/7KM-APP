@@ -12,7 +12,7 @@ class ClientManager {
     
     let db = Firestore.firestore()
     
-    static let shared = ClientManager()
+    
     var clients: [Client] = []
     
     func getNumberOfClients() -> Int {
@@ -32,22 +32,19 @@ class ClientManager {
                 print(error)
             }
             
-            //Что делает эта строка?
             guard let data = data else { return }
             self?.clients.removeAll()
             
             for document in data.documents {
                 let clientData = document.data()
                 
-                if let orderNumber = clientData["orderNumber"] as? String,
-                   let name = clientData["name"] as? String,
-                   let phoneNumber = clientData["phoneNumber"] as? String,
-                   let city = clientData["city"] as? String,
-                   let postNumber = clientData["postNumber"] as? String,
-                   let paymentDate = clientData["paymentDate"] as? String
+               
+                
+                if let name = clientData["name"] as? String,
+                   let phoneNumber = clientData["phoneNumber"] as? String
                 {
                     let uuid = document.documentID
-                    let client = Client(uuid: uuid, orderNumber: orderNumber, name: name, phoneNumber: phoneNumber, city: city, postNumber: postNumber, paymentDate: paymentDate)
+                    let client = Client(uuid: uuid, name:  name, phoneNumber: phoneNumber)
                     self?.clients.append(client)
                 }
             }

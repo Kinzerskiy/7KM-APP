@@ -12,19 +12,22 @@ class ClientsViewController: UIViewController {
     
     @IBOutlet weak var clientsTableView: UITableView!
     
-    let clientManager = ClientManager()
+    let orderManager = OrderManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareTableView()
         getData()
+        
     }
     
     func getData() {
-        ClientManager.shared.getClients {
+        orderManager.getOrders {
             self.clientsTableView.reloadData()
         }
         }
+    
+    
     
     func prepareTableView() {
         clientsTableView.delegate = self
@@ -46,15 +49,15 @@ extension ClientsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        ClientManager.shared.getNumberOfClients()
+        orderManager.getNumberOfOrders()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ClientsTableViewCell", for: indexPath) as! ClientsTableViewCell
         
-        let clients = ClientManager.shared.getClient(by: indexPath.row)
+        let order = orderManager.getOrder(by: indexPath.row)
         
-        cell.fill(with: clients)
+        cell.fill(with: order)
         return cell
     }
     

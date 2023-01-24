@@ -12,15 +12,17 @@ class ClientsTableViewCell: UITableViewCell {
     @IBOutlet weak var orderNumberLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
-
+    
+    var clientComplition: (() -> Void)?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    func fill(with model: Client)  {
-        orderNumberLabel.text = model.orderNumber
-        nameLabel.text = model.name
-        phoneLabel.text = model.phoneNumber
+    func fill(with model: Order) {
+        orderNumberLabel.text = model.orderId
+        nameLabel.text = model.client.name
+        phoneLabel.text = model.client.phoneNumber
     }
     
 

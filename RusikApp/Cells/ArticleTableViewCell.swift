@@ -17,6 +17,6 @@ class ArticleTableViewCell: UITableViewCell {
     }
     
     func fill(with model: Order)  {
-        articleLabel.text = model.articleModel
+        
     }
 }

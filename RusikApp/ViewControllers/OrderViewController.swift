@@ -19,12 +19,13 @@ class OrderViewController: UIViewController {
     @IBOutlet weak var articleTableView: UITableView!
     
     let clientManager = ClientManager()
-    let articleManager = OrderManager()
+    let orderManager = OrderManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
+    
     
     func prepareTableView() {
         articleTableView.delegate = self
@@ -47,15 +48,11 @@ extension OrderViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        OrderManager.shared.getNumberOfArticles()
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleTableViewCell", for: indexPath) as! ArticleTableViewCell
-        
-        let articles = OrderManager.shared.getArticle(by: indexPath.row)
-        
-        cell.fill(with: articles)
         return cell
     }
 }
