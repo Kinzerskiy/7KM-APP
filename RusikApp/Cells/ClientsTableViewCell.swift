@@ -21,8 +21,8 @@ class ClientsTableViewCell: UITableViewCell {
     
     func fill(with model: Order) {
         orderNumberLabel.text = model.orderId
-        nameLabel.text = model.client.name
-        phoneLabel.text = model.client.phoneNumber
+        nameLabel.text = model.client?.name
+        phoneLabel.text = model.client?.phoneNumber
     }
     
 

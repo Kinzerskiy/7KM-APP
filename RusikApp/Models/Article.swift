@@ -8,6 +8,8 @@
 import Foundation
 
 struct Article: Codable {
-    var articleName: String
+    var articleName: String?
     var articleId: String?
+    
+    
 }

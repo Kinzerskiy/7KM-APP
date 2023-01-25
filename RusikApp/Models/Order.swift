@@ -8,8 +8,9 @@
 import Foundation
 
 struct Order: Codable {
-    var article: Article
-    var client: Client
+    var article: [Article]?
+    var articleIds: [String]?
+    var client: Client?
     
     var orderId: String
     let paymentDate: String?

@@ -11,33 +11,6 @@ import FirebaseFirestore
 class OrderManager {
     
     var orders: [Order] = []
-    var refOfClient: [DocumentReference] = []
-    
-    
-    func getRefOfClient(completion: @escaping () -> Void) {
-        
-        let db = Firestore.firestore()
-        
-        let orderRef = db.collection("Order")
-        orderRef.getDocuments { [weak self] data, error in
-            if let error = error {
-                print(error)
-            }
-            
-            guard let data = data else { return }
-            
-            for document in data.documents {
-                let orderData = document.data()
-                
-                
-                if let client = orderData["client"] as? DocumentReference {
-                    let clientRef = client
-                    self?.refOfClient.append(clientRef)
-                }
-            }
-            completion()
-        }
-    }
     
     
     func getNumberOfOrders() -> Int {
@@ -59,35 +32,53 @@ class OrderManager {
             }
             
             guard let data = data else { return }
-            self?.orders.removeAll()
+            
             
             let myGroup = DispatchGroup()
             
+            
             for document in data.documents {
                 let orderData = document.data()
-                myGroup.enter()
                 
                 if let orderId = orderData["orderId"] as? String,
-                   let clientReference = orderData["client"] as? DocumentReference,
-                   let articleId = orderData["articleId"] as? String {
+                   let clientReference = orderData["client"] as? DocumentReference {
                     let paymentDate = orderData["paymentDate"] as? String
+                    let articleIds = orderData["articles"] as! [String]
                     let city = orderData["city"] as? String
                     let postNumber = orderData["postNumber"] as? String
+                    var order = Order.init(articleIds: articleIds, orderId: orderId, paymentDate: paymentDate, city: city, postNumber: postNumber)
                     
+                    myGroup.enter()
                     self?.getClient(by: clientReference) { client in
-                        self?.getArticle(by: articleId) { article in
-                            let order = Order.init(article: article, client: client, orderId: orderId, paymentDate: paymentDate, city: city, postNumber: postNumber)
-                            self?.orders.append(order)
-                            myGroup.leave()
-                        }
-                        myGroup.notify(queue: .main) {
-                            completion()
-                        }
+                        order.client = client
+                        self?.orders.append(order)
+                        myGroup.leave()
+                    }
+                }
+            }
+            myGroup.notify(queue: .main) {
+                self?.fillOrdersByArticles(completion: completion)
+            }
+        }
+    }
+
+    func fillOrdersByArticles(completion: @escaping () -> Void) {
+        let myGroup = DispatchGroup()
+        for (index, order) in orders.enumerated() {
+            if let articleIds = order.articleIds {
+                for articleId in articleIds {
+                    myGroup.enter()
+                    self.getArticle(by: articleId) { article in
+                        self.orders[index].article?.append(article)
+                        myGroup.leave()
                     }
                 }
             }
         }
-    }
+            myGroup.notify(queue: .main) {
+                completion()
+            }
+        }
     
     func getClient(by reference: DocumentReference, completion: @escaping (Client) -> Void) {
         reference.getDocument { document, error in
@@ -111,23 +102,23 @@ class OrderManager {
         let db = Firestore.firestore()
         
         
-        let documentRef = db.collection("Articles").document(id)
+        let documentRef = db.collection("Article").document(id)
         
-        documentRef.getDocument { [weak self ] document, error in
+        documentRef.getDocument { document, error in
             if let error = error {
                 print(error)
             }
             
             guard let document = document, let articletData = document.data() else { return }
             
-            let articleName = articletData["articleName"] as! String
-            let articleId = articletData["articleId"] as! String
-            
-            
-            self?.getArticle(by: articleId) { article in
-                let article = Article(articleName: articleName, articleId: articleId)
+            if let articleName = articletData["articleName"] as? String,
+               let articleId = articletData["articleId"] as? String {
+                
+                let article = Article.init(articleName: articleName, articleId: articleId)
+                
                 completion(article)
             }
+            
         }
     }
 }
