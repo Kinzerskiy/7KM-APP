@@ -10,6 +10,7 @@ import Foundation
 struct Order: Codable {
     var article: [Article]?
     var articleIds: [String]?
+    var articleCount: Int?
     var client: Client?
     
     var orderId: String

@@ -25,6 +25,8 @@ class ClientsTableViewCell: UITableViewCell {
         phoneLabel.text = model.client?.phoneNumber
     }
     
+    
+    
 
     
 }

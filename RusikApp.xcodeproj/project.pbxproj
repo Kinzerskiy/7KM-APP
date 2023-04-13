@@ -9,49 +9,49 @@
 /* Begin PBXBuildFile section */
 		0C0CB91A297F2E6A00DC0CDC /* ArticleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CB919297F2E6A00DC0CDC /* ArticleManager.swift */; };
 		0C3AB6CF297C13730045A752 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3AB6CE297C13730045A752 /* Article.swift */; };
-		0CE1778F2978CD2F001D4143 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1778E2978CD2F001D4143 /* OrderViewController.swift */; };
 		0CE177942978CE5D001D4143 /* ClientsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE177922978CE5D001D4143 /* ClientsTableViewCell.swift */; };
 		0CE177952978CE5D001D4143 /* ClientsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CE177932978CE5D001D4143 /* ClientsTableViewCell.xib */; };
 		0CE177992978D0AF001D4143 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE177982978D0AF001D4143 /* Client.swift */; };
 		0CE1779B2978D29F001D4143 /* OrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1779A2978D29F001D4143 /* OrderManager.swift */; };
 		0CE1779D2978D6CD001D4143 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1779C2978D6CD001D4143 /* Order.swift */; };
 		0CE1779F2978DDE7001D4143 /* ClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1779E2978DDE7001D4143 /* ClientManager.swift */; };
-		0CE177A12978E1A9001D4143 /* NewOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE177A02978E1A9001D4143 /* NewOrderViewController.swift */; };
 		0CE177A42978E254001D4143 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE177A22978E254001D4143 /* ArticleTableViewCell.swift */; };
 		0CE177A52978E254001D4143 /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CE177A32978E254001D4143 /* ArticleTableViewCell.xib */; };
 		0CE9A6AF297304A2000B4FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE9A6AE297304A2000B4FF0 /* AppDelegate.swift */; };
 		0CE9A6B1297304A2000B4FF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE9A6B0297304A2000B4FF0 /* SceneDelegate.swift */; };
-		0CE9A6B3297304A2000B4FF0 /* ClientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE9A6B2297304A2000B4FF0 /* ClientsViewController.swift */; };
 		0CE9A6B6297304A2000B4FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CE9A6B4297304A2000B4FF0 /* Main.storyboard */; };
 		0CE9A6B8297304A5000B4FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CE9A6B7297304A5000B4FF0 /* Assets.xcassets */; };
 		0CE9A6BB297304A5000B4FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CE9A6B9297304A5000B4FF0 /* LaunchScreen.storyboard */; };
 		0CE9A6C3297306DD000B4FF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CE9A6C2297306DD000B4FF0 /* GoogleService-Info.plist */; };
 		47A1BC4731AC20DCB3E14D0B /* Pods_RusikApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49491A50B2465AB17BBD1B83 /* Pods_RusikApp.framework */; };
+		8E714CED29E81E0800B3BBF1 /* NewOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E714CEA29E81E0800B3BBF1 /* NewOrderViewController.swift */; };
+		8E714CEE29E81E0800B3BBF1 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E714CEB29E81E0800B3BBF1 /* OrderViewController.swift */; };
+		8E714CEF29E81E0800B3BBF1 /* ClientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E714CEC29E81E0800B3BBF1 /* ClientsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C0CB919297F2E6A00DC0CDC /* ArticleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleManager.swift; sourceTree = "<group>"; };
 		0C3AB6CE297C13730045A752 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
-		0CE1778E2978CD2F001D4143 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		0CE177922978CE5D001D4143 /* ClientsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsTableViewCell.swift; sourceTree = "<group>"; };
 		0CE177932978CE5D001D4143 /* ClientsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClientsTableViewCell.xib; sourceTree = "<group>"; };
 		0CE177982978D0AF001D4143 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		0CE1779A2978D29F001D4143 /* OrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderManager.swift; sourceTree = "<group>"; };
 		0CE1779C2978D6CD001D4143 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		0CE1779E2978DDE7001D4143 /* ClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientManager.swift; sourceTree = "<group>"; };
-		0CE177A02978E1A9001D4143 /* NewOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderViewController.swift; sourceTree = "<group>"; };
 		0CE177A22978E254001D4143 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		0CE177A32978E254001D4143 /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
 		0CE9A6AB297304A2000B4FF0 /* RusikApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RusikApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE9A6AE297304A2000B4FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CE9A6B0297304A2000B4FF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0CE9A6B2297304A2000B4FF0 /* ClientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsViewController.swift; sourceTree = "<group>"; };
 		0CE9A6B5297304A2000B4FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CE9A6B7297304A5000B4FF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CE9A6BA297304A5000B4FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CE9A6BC297304A5000B4FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CE9A6C2297306DD000B4FF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		49491A50B2465AB17BBD1B83 /* Pods_RusikApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RusikApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E714CEA29E81E0800B3BBF1 /* NewOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewOrderViewController.swift; path = RusikApp/vc/NewOrderViewController.swift; sourceTree = SOURCE_ROOT; };
+		8E714CEB29E81E0800B3BBF1 /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrderViewController.swift; path = RusikApp/vc/OrderViewController.swift; sourceTree = SOURCE_ROOT; };
+		8E714CEC29E81E0800B3BBF1 /* ClientsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClientsViewController.swift; path = RusikApp/vc/ClientsViewController.swift; sourceTree = SOURCE_ROOT; };
 		9D1077B209CA325409F92468 /* Pods-RusikApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RusikApp.debug.xcconfig"; path = "Target Support Files/Pods-RusikApp/Pods-RusikApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D269FD2C6CE94C2C3FC97F78 /* Pods-RusikApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RusikApp.release.xcconfig"; path = "Target Support Files/Pods-RusikApp/Pods-RusikApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,9 +71,9 @@
 		0CE177902978CD5B001D4143 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0CE9A6B2297304A2000B4FF0 /* ClientsViewController.swift */,
-				0CE1778E2978CD2F001D4143 /* OrderViewController.swift */,
-				0CE177A02978E1A9001D4143 /* NewOrderViewController.swift */,
+				8E714CEC29E81E0800B3BBF1 /* ClientsViewController.swift */,
+				8E714CEB29E81E0800B3BBF1 /* OrderViewController.swift */,
+				8E714CEA29E81E0800B3BBF1 /* NewOrderViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -280,19 +280,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CE1778F2978CD2F001D4143 /* OrderViewController.swift in Sources */,
-				0CE9A6B3297304A2000B4FF0 /* ClientsViewController.swift in Sources */,
+				8E714CEF29E81E0800B3BBF1 /* ClientsViewController.swift in Sources */,
 				0CE1779D2978D6CD001D4143 /* Order.swift in Sources */,
 				0CE9A6AF297304A2000B4FF0 /* AppDelegate.swift in Sources */,
 				0C3AB6CF297C13730045A752 /* Article.swift in Sources */,
-				0CE177A12978E1A9001D4143 /* NewOrderViewController.swift in Sources */,
 				0CE177942978CE5D001D4143 /* ClientsTableViewCell.swift in Sources */,
 				0CE1779B2978D29F001D4143 /* OrderManager.swift in Sources */,
 				0C0CB91A297F2E6A00DC0CDC /* ArticleManager.swift in Sources */,
+				8E714CED29E81E0800B3BBF1 /* NewOrderViewController.swift in Sources */,
 				0CE177A42978E254001D4143 /* ArticleTableViewCell.swift in Sources */,
 				0CE9A6B1297304A2000B4FF0 /* SceneDelegate.swift in Sources */,
 				0CE177992978D0AF001D4143 /* Client.swift in Sources */,
 				0CE1779F2978DDE7001D4143 /* ClientManager.swift in Sources */,
+				8E714CEE29E81E0800B3BBF1 /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

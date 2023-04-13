@@ -12,7 +12,6 @@ class OrderManager {
     
     var orders: [Order] = []
     
-    
     func getNumberOfOrders() -> Int {
         return orders.count
     }
@@ -112,9 +111,11 @@ class OrderManager {
             guard let document = document, let articletData = document.data() else { return }
             
             if let articleName = articletData["articleName"] as? String,
-               let articleId = articletData["articleId"] as? String {
+               let articleId = articletData["articleId"] as? String,
+               let articleCount = articletData["articleCount"] as? String
+            {
                 
-                let article = Article.init(articleName: articleName, articleId: articleId)
+                let article = Article.init(articleName: articleName, articleId: articleId, articleCount: articleCount)
                 
                 completion(article)
             }
